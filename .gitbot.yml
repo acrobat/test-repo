@@ -1,1 +1,8 @@
-
+rules:
+    default_issue_labels:
+      description: Add default labels to newly created issues
+      events: [issues]
+      condition:
+        - action == "opened"
+      action:
+        label: [unconfirmed]
