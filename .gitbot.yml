@@ -1,7 +1,7 @@
 rules:
     default_issue_labels:
-      description: Add default labels to newly created issues
-      events: [issues1]
+      description: Add default labels to newly created issues.
+      events: [issues]
       condition:
         - action == "opened"
       action:
