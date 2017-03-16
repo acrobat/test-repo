@@ -8,6 +8,4 @@ rules:
         label: [unconfirmed]
         comment: > 
             Hello @{{ user.login }}! Thanks for this issue in {{ repository.full_name }}!
-            And test multi line comments
-        reopen: true
-                   
+            And test multi line comments                   
