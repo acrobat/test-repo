@@ -4,8 +4,9 @@ rules:
       events: [issues]
       condition:
         - action == "opened"
+        - body matches "Bug report\?\s*\|\s*yes$"
       action:
-        label: [unconfirmed]
+        label: [unconfirmed, bug]
 #        comment: > 
 #            Hello @{{ user.login }}! Thanks for this issue in {{ repository.full_name }}!
 #            
