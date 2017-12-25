@@ -4,7 +4,7 @@ rules:
       events: [issues]
       condition:
         - action == "opened"
-        - issue.getBody() matches "\|\s*Bug report\?\s*\|\s*(yes)(?!\/no)\s*"
+        - issue.getBody() matches "/\|\s*Bug report\?\s*\|\s*(yes)(?!\/no)\s*/"
       action:
         label: [unconfirmed, bug]
 #        comment: > 
